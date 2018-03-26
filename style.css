@@ -7,6 +7,7 @@ body {
 p {
   font-size: 1.3em;
 }
+
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -36,7 +37,8 @@ p {
 }
 
 .time-display {
-  background: rgb(235,235,235);
+padding-top: 50px;
+  background: rgb(235, 235, 235);
   /*background: linear-gradient(to right, #e73827, #f85032);*/
 }
 
@@ -49,6 +51,7 @@ p {
 .short-break-display {
   color: #68964c;
 }
+
 .long-break-display {
   color: #5ebcc1;
 }
@@ -73,13 +76,15 @@ p {
   margin-left: 25px;
   margin-right: 25px;
   border: none;
+    cursor: pointer;
 }
 
 .time-buttons:hover {
   color: black;
 }
+
 .aside {
-  background: rgb(245,245,245);
+  background: rgb(245, 245, 245);
 }
 
 .set-custom-time {
@@ -166,7 +171,7 @@ p {
   }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 601px) {
   .time-display {
     flex: 3 0;
   }
