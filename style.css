@@ -1,6 +1,5 @@
 body {
   font-family: "Cookie";
-  margin: 0 0 100px;
   padding: 0px;
 }
 
@@ -27,7 +26,7 @@ p {
 #title-text {
   display: inline;
   text-align: center;
-  font-size: 3.3em;
+  font-size: 3em;
 }
 
 #subtitle-text {
@@ -45,7 +44,7 @@ p {
 .time-text {
   font-family: "Orbitron";
   color: #f85032;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .short-break-display {
