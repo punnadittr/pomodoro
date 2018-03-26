@@ -36,7 +36,7 @@ p {
 }
 
 .time-display {
-  padding-top: 50px;
+  padding-top: 20px;
   background: rgb(235, 235, 235);
   /*background: linear-gradient(to right, #e73827, #f85032);*/
 }
@@ -56,7 +56,7 @@ p {
 }
 
 .buttons-container {
-  margin-top: 35px;
+  margin-top: 20px;
   text-align: center;
 }
 
