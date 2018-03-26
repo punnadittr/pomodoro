@@ -1,0 +1,185 @@
+body {
+  font-family: "Cookie";
+  margin: 0 0 100px;
+  padding: 0px;
+}
+
+p {
+  font-size: 1.3em;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.title-bar {
+  height: 90px;
+  width: 100%;
+}
+
+#title-text {
+  display: inline;
+  text-align: center;
+  font-size: 3.3em;
+}
+
+#subtitle-text {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.time-display {
+  background: rgb(235,235,235);
+  /*background: linear-gradient(to right, #e73827, #f85032);*/
+}
+
+.time-text {
+  font-family: "Orbitron";
+  color: #f85032;
+  font-size: 3.6em;
+}
+
+.short-break-display {
+  color: #68964c;
+}
+.long-break-display {
+  color: #5ebcc1;
+}
+
+.buttons-container {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.button {
+  height: auto;
+  widows: auto;
+  display: inline;
+}
+
+.time-buttons {
+  color: #f85032;
+  font-size: 1em;
+  background: none;
+  height: 35px;
+  width: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: none;
+}
+
+.time-buttons:hover {
+  color: black;
+}
+.aside {
+  background: rgb(245,245,245);
+}
+
+.set-custom-time {
+  font-size: 2em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 80%;
+  height: 20px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: #f85032;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: #f85032;
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+  .time-display {
+    padding-top: 30px;
+  }
+  .time-text {
+    font-size: 7.5em;
+  }
+  .title-bar {
+    height: 160px;
+  }
+  #title-text {
+    font-size: 5em;
+  }
+  #subtitle-text {
+    font-size: 2em;
+    margin-top: 2.2%;
+  }
+  .time-icons {
+    margin-bottom: 0;
+    font-size: 2em;
+    color: red;
+  }
+  .time-buttons {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  .set-custom-time {
+    font-size: 3em;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .time-display {
+    flex: 3 0;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .time-display {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .time-text {
+    margin-top: 100px;
+  }
+}
