@@ -3,10 +3,6 @@ body {
   padding: 0px;
 }
 
-p {
-  font-size: 1.3em;
-}
-
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -18,27 +14,30 @@ p {
   flex: 1 100%;
 }
 
+/* End of wrapper section */
+
 .title-bar {
   height: 90px;
   width: 100%;
 }
 
-#title-text {
+.title-text {
   display: inline;
   text-align: center;
   font-size: 3em;
 }
 
-#subtitle-text {
+.subtitle-text {
   margin-top: 2%;
   text-align: center;
   font-size: 1.5em;
 }
 
+/* End of header section */
+
 .time-display {
   padding-top: 20px;
   background: rgb(235, 235, 235);
-  /*background: linear-gradient(to right, #e73827, #f85032);*/
 }
 
 .time-text {
@@ -48,23 +47,29 @@ p {
 }
 
 .short-break-display {
-  color: #68964c;
+  color: #E8175D;
 }
 
 .long-break-display {
   color: #5ebcc1;
 }
 
+/*End of time display section (the timer itself)*/
+
 .buttons-container {
   margin-top: 20px;
   text-align: center;
 }
+
+/* the div for icons */
 
 .button {
   height: auto;
   widows: auto;
   display: inline;
 }
+
+/* the actual buttons*/
 
 .time-buttons {
   color: #f85032;
@@ -81,6 +86,8 @@ p {
 .time-buttons:hover {
   color: black;
 }
+
+/* End of button section */
 
 .aside {
   background: rgb(245, 245, 245);
@@ -109,20 +116,11 @@ p {
   height: 20px;
   /* Slider handle height */
   background: #f85032;
-  /* Green background */
   cursor: pointer;
   /* Cursor on hover */
 }
 
-.slider::-moz-range-thumb {
-  width: 20px;
-  /* Set a specific slider handle width */
-  height: 20px;
-  /* Slider handle height */
-  background: #f85032;
-  cursor: pointer;
-  /* Cursor on hover */
-}
+/* End of Aside section*/
 
 .footer {
   position: absolute;
@@ -133,7 +131,10 @@ p {
   overflow: hidden;
 }
 
+/* End of footer section */
+
 @media all and (min-width: 600px) {
+  /* for normal view more than 600px wide*/
   .aside {
     flex: 1 auto;
   }
@@ -146,10 +147,10 @@ p {
   .title-bar {
     height: 160px;
   }
-  #title-text {
+  .title-text {
     font-size: 5em;
   }
-  #subtitle-text {
+  .subtitle-text {
     font-size: 2em;
     margin-top: 2.2%;
   }
@@ -170,7 +171,8 @@ p {
   }
 }
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 800px) {
+  /* for normal view more than 800px wide*/
   .time-display {
     flex: 3 0;
   }
