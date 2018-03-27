@@ -101,12 +101,12 @@ function startBreak() {
   initialize();
   ding.play();
   clickedStart = false;
-  if (breakPassed == false && sessionCounter != 3) {
+  if (breakPassed == false && sessionCounter < 3) {
     console.log("This is shortBreak");
     startSession(true, shortMinutes)
     timer.classList.add('short-break-display');
     sessionCounter += 1;
-  } else if (sessionCounter == 3) {
+  } else if (breakPassed == false && sessionCounter == 3) {
     console.log("This is longbreak");
     startSession(true, longMinutes);
     timer.classList.add('long-break-display');
